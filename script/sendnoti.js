@@ -17,7 +17,7 @@ module.exports.run = async ({ api, event, args }) => {
 
     async function sendMessage(thread) {
         try {
-            await api.sendMessage(`‼️𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗙𝗥𝗢𝗠 𝗠𝗬 𝗔𝗗𝗠𝗜𝗡‼️\n┏━━━━━━━━━━━━━━━━━━━━┓\n      𝗡𝗢𝗧𝗜: ${custom}\n┗━━━━━━━━━━━━━━━━━━━┛\n`, thread.threadID);
+            await api.sendMessage(`‼️𝗡𝗢𝗧𝗜𝗙𝗜𝗖𝗔𝗧𝗜𝗢𝗡 𝗙𝗥𝗢𝗠 𝗠𝗬 𝗔𝗗𝗠𝗜𝗡‼️\n┏━━━━━━━━━━━━━━━━━━━┓\n      ⏤͟͟͞͞𝗡𝗢𝗧𝗜: ${custom}\n┗━━━━━━━━━━━━━━━━━━━┛\n`, thread.threadID);
             sentCount++;
         } catch (error) {
             console.error("Error sending a message:", error);
